@@ -1,155 +1,77 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <!-- 正确的 viewport（避免移动端压缩） -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <title>My Engineering Portfolio</title>
+  <style>
+    /* 全局排版 */
+    html, body { margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; line-height: 1.6; }
 
-  <title>Hao Liu</title>
-  <link rel="icon" type="image/png" href="icon.png">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet">
-
-  <style type="text/css">
-    /* —— 颜色与基础排版 —— */
-    a { color: #1772d0; text-decoration: none; }
-    a:hover, a:focus { color: #f09228; text-decoration: none; }
-
-    body, td, th, tr, p, a {
-      font-family: 'Lato', Verdana, Helvetica, sans-serif;
-      font-size: 14px;
-      line-height: 1.65;
-    }
-    strong { font-weight: 700; }
-
-    /* 自定义标签的字号（与教授模板一致） */
-    heading  { font-size: 22px; font-weight: 700; }
-    papertitle { font-size: 14px; font-weight: 700; }
-    name { font-size: 32px; font-weight: 700; }
-
-    /* 页面背景 + “白卡片”容器（产生留白与居中） */
-    html, body { margin: 0; padding: 0; background:#f7f7f7; }
-    .card {
-      max-width: 900px;           /* 可改为 800/820/880，控制整页宽度 */
-      width: 92%;
-      margin: 56px auto;          /* 顶部/底部留白 */
-      background: #fff;
-      padding: 32px 28px;
-      border-radius: 12px;
-      box-shadow: 0 10px 24px rgba(0,0,0,.06);
+    /* 居中的单栏容器 */
+    .container {
+      max-width: 900px;      /* 单栏最大宽度，可改成 760~980px */
+      width: 92%;            /* 小屏占比 */
+      margin: 40px auto;     /* 关键：水平居中 */
     }
 
-    /* 图片容器（用于放 logo 或照片时水平居中） */
-    .image-center { text-align:center; }
-    .image-center img { max-width:100%; height:auto; }
+    /* 居中标题与导航 */
+    h1, nav { text-align: center; }
+    nav a {
+      display: inline-block;
+      margin: 0 12px;
+      text-decoration: none;
+      color: #1a73e8;
+    }
 
-    /* 导航行 */
-    .nav { text-align:center; }
-    .nav a { margin: 0 10px; }
+    section { margin-top: 40px; }
   </style>
 </head>
 
-<body>
-  <!-- 外层白色卡片容器（留白 + 居中） -->
-  <div class="card">
+  <h1>Hao Liu</h1>
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#projects">Research and Publications</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-    <!-- 顶部：标题 + 头像（右侧可替换/删除） -->
-    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-      <tr>
-        <td width="67%" valign="middle">
-          <p align="center"><name>Hao Liu 刘浩</name></p>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I’m a master’s student in Mechanical Engineering at
+      <strong>Carnegie Mellon University</strong>, conducting research in the
+      <strong>CERLAB — Computational Engineering & Robotics Laboratory</strong>.
+      My work focuses on <strong>heterogeneous robot path planning</strong>—coordinating UAVs and UGVs for large-scale exploration.
+    </p>
+  
+    <p>
+      I expect to complete my M.S. in <strong>May 2026</strong>.
+      I received my B.S. in Mechanical Engineering from <strong>The Pennsylvania State University</strong> in <strong>May 2024</strong>.
+    </p>
+  </section>
 
-          <!-- 导航行 -->
-          <p class="nav">
-            <a href="#about">About</a> &nbsp;/&nbsp;
-            <a href="#projects">Projects</a> &nbsp;/&nbsp;
-            <a href="#resume">Resume</a> &nbsp;/&nbsp;
-            <a href="#contact">Contact</a>
-          </p>
-        </td>
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li>Project 1 – Coming soon</li>
+      <li>Project 2 – Coming soon</li>
+      <li>Project 3 – Coming soon</li>
+      <li>Project 4 – Coming soon</li>
+      <li>Project 5 – Coming soon</li>
+      <li>Project 6 – Coming soon</li>
+    </ul>
+  </section>
 
-        <!-- 右侧头像（没有就删掉整列 <td>） -->
-        <td width="33%" valign="top">
-          <img src="me.jpg" alt="Hao Liu" width="100%" style="border-radius:8px;">
-        </td>
-      </tr>
-    </table>
+  <section id="resume">
+    <h2>Resume</h2>
+    <p>[Link to PDF resume will go here]</p>
+  </section>
 
-    <!-- About -->
-    <table id="about" width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-      <tr>
-        <td valign="middle">
-          <heading>About Me</heading>
-          <p>
-            I’m a master’s student in Mechanical Engineering at
-            <strong>Carnegie Mellon University</strong>, conducting research in the
-            <strong>CERLAB — Computational Engineering & Robotics Laboratory</strong>.
-            My work focuses on <strong>heterogeneous robot path planning</strong>—coordinating UAVs and UGVs for large-scale exploration.
-          </p>
-          <p>
-            I expect to complete my M.S. in <strong>May 2026</strong>.
-            I received my B.S. in Mechanical Engineering from <strong>The Pennsylvania State University</strong> in <strong>May 2024</strong>.
-          </p>
-        </td>
-      </tr>
-    </table>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: haoliu0717@gmail.com</p>
+  </section>
 
-    <!-- Projects（先放占位符，后续替换成你的项目条目） -->
-    <table id="projects" width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-      <tr>
-        <td valign="middle">
-          <heading>Research and Publications / Projects</heading>
-          <ul>
-            <li>Project 1 — Coming soon</li>
-            <li>Project 2 — Coming soon</li>
-            <li>Project 3 — Coming soon</li>
-            <li>Project 4 — Coming soon</li>
-            <li>Project 5 — Coming soon</li>
-            <li>Project 6 — Coming soon</li>
-          </ul>
-        </td>
-      </tr>
-    </table>
-
-    <!-- 可放 logo 或实验室图（可删） -->
-    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
-      <tr><td class="image-center">
-        <img src="logo.png" alt="Lab Logo" style="height:120px;">
-      </td></tr>
-    </table>
-
-    <!-- Resume -->
-    <table id="resume" width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-      <tr>
-        <td valign="middle">
-          <heading>Resume</heading>
-          <p><a href="resume.pdf" target="_blank" rel="noopener">Download my résumé (PDF)</a></p>
-        </td>
-      </tr>
-    </table>
-
-    <!-- Contact -->
-    <table id="contact" width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-      <tr>
-        <td valign="middle">
-          <heading>Contact</heading>
-          <p>Email: <a href="mailto:haoliu0717@gmail.com">haoliu0717@gmail.com</a><br>
-             Phone: 814-826-9506</p>
-        </td>
-      </tr>
-    </table>
-
-    <hr>
-
-    <!-- 页脚（可改/可删） -->
-    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="12">
-      <tr>
-        <td align="left">
-          <p><small>Based on <a href="https://jonbarron.info/">this website</a>. © Hao Liu</small></p>
-        </td>
-      </tr>
-    </table>
-
-  </div><!-- /.card -->
 </body>
 </html>
